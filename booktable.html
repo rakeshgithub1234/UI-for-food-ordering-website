@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <!-- <script src="/script.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div class="gradient">
+        <div class="container">
+            <nav>
+                <h2 class="logo">Hunter <br><p>food cafe</p></h2> 
+                <ul>
+                    <li><a href="food.html" class="menu1">Home</a></li>
+                    <li><a href="#menu.html" class="menu1">Menu</a></li>
+                    <li><a href="#about.html" class="menu1">About</a></li>
+                    <li><a href="#contact.html" class="menu1">Contact</a></li>
+                    <!-- <li><a href="#contact.html" class="menu2" id="menu2">sign in</a></li> -->
+                </ul>
+                <div class="signup-page-content">
+                    <li><a href="#" class="menu2" id="signup-page-content-link-btn" onclick="signup_btn_func()">sign up</a></li>
+
+                    <form action="https://formspree.io/f/mgeqpjlw" method="post" name="my_my_signup_form" onclick="return signup_validation()">
+
+                        <div class="signup-popup" id="signup-popup">
+
+                            <div class="signup-popup-contents">
+                                <a href=""><i class="fa-solid fa-xmark" id="cancel-mark" onclick="cancel_mark()"></i></a>
+                                <h2>Register</h2>
+                                <input type="email" name="email" placeholder="Email">
+                                <input type="password" name="password" placeholder="Password">
+                                <input type="password" name="Retype_password" placeholder="Confirm Password">
+                                <button type="submit" class="popup-contents-signup-link">signup--></button>
+    
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+
+            <div class="table-booking-system">
+                <div class="book-table">
+                    <a href=""><i class="fa-solid fa-chair table-of-chair1-img" onclick="table_got_selected()"></i></a>
+                    <a href=""><i class="fa-solid fa-circle round-table-img1"></i></a>
+                    <a href=""><i class="fa-solid fa-chair table-of-chair1-img" onclick="table_got_selected()"></i></a>
+                    <!-- <button type="submit">Reserve table</button> -->
+                </div>
+                <button type="submit" onclick="table_booking_system_button()">Reserve table</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <!-- <script src="/script.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div class="gradient">
+        <div class="container">
+            <nav>
+                <h2 class="logo">Hunter <br><p>food cafe</p></h2> 
+                <ul>
+                    <li><a href="#" class="menu1">Home</a></li>
+                    <li><a href="#menu.html" class="menu1">Menu</a></li>
+                    <li><a href="#about.html" class="menu1">About</a></li>
+                    <li><a href="#contact.html" class="menu1">Contact</a></li>
+                    <!-- <li><a href="#contact.html" class="menu2" id="menu2">sign in</a></li> -->
+                </ul>
+                <div class="signup-page-content">
+                    <li><a href="#" class="menu2" id="signup-page-content-link-btn" onclick="signup_btn_func()">sign up</a></li>
+
+                    <form action="https://formspree.io/f/mgeqpjlw" method="post" name="my_my_signup_form" onclick="return signup_validation()">
+
+                        <div class="signup-popup" id="signup-popup">
+
+                            <div class="signup-popup-contents">
+                                <a href=""><i class="fa-solid fa-xmark" id="cancel-mark" onclick="cancel_mark()"></i></a>
+                                <h2>Register</h2>
+                                <input type="email" name="email" placeholder="Email">
+                                <input type="password" name="password" placeholder="Password">
+                                <input type="password" name="Retype_password" placeholder="Confirm Password">
+                                <button type="submit" class="popup-contents-signup-link">signup--></button>
+    
+                            </div>
+    
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+            </nav>
+
+            <div class="hunter1">
+                <h2 class="hunter2">Hunter! <br><p>that meets your needs</p> <a href="#menu.html"><button type="submit" class="navbutton">Order Online</button></a> <br> <a href="booktable.html"><button  type="button" class="tablebutton">Book a Table</button></a></h2><br>
+                <img src="images/burger.webp" alt="sorry" class="burger">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- food menu section  -->
+    <div class="container2" id="menu.html">
+        <div class="fishfry">
+            <img src="images/fish fry.jpg" alt="sorry">
+            <h2 style="font-family: monospace;" >Fish fry</h2>
+            <p>$-20</p>
+            <button type="submit" class="cartbutton" onclick="order_online_now()">Order Now</button>            
+        </div>
+
+        <div class="fishfry">
+            <img src="images/chicken tantoor.jfif" alt="sorry">
+            <h2 style="font-family: monospace;" >chicken tantoor</h2>
+            <p>$-20</p>
+            <button type="submit" class="cartbutton" onclick="order_online_now()">Order Now</button>            
+        </div>
+
+        <div class="fishfry">
+            <img src="images/chicken meals.jpg" alt="sorry">
+            <h2 style="font-family: monospace;" >chicken meals</h2>
+            <p>$-30</p>
+            <button type="submit" class="cartbutton" onclick="order_online_now()">Order Now</button>
+        </div>
+
+        <div class="fishfry">
+            <img src="images/chicken curry.jfif" alt="sorry">
+            <h2 style="font-family: monospace;" >chicken curry</h2>
+            <p>$-30</p>
+            <button type="submit" class="cartbutton" onclick="order_online_now()">Order Now</button>           
+        </div>
+
+        <div class="fishfry">
+            <img src="images/biriyani.jpg" alt="sorry">
+            <h2 style="font-family: monospace;" >Biriyani</h2>
+            <p>$-50</p>
+            <button type="submit" class="cartbutton" onclick="order_online_now()">Order Now</button>           
+        </div>
+
+        <div class="fishfry">
+            <img src="images/grill chicken.jpg" alt="sorry">
+            <h2 style="font-family: monospace;" >Grill chicken </h2>
+            <p>$-30</p>
+            <button type="submit" class="cartbutton" onclick="order_online_now()">Order Now</button>            
+        </div>
+
+        <div class="fishfry">
+            <img src="images/chicken curry.jfif" alt="sorry">
+            <h2 style="font-family: monospace;" >chicken curry</h2>
+            <p>$-30</p>
+            <button type="submit" class="cartbutton" onclick="order_online_now()">Order Now</button>            
+        </div>
+
+        <div class="fishfry">
+            <img src="images/chicken curry.jfif" alt="sorry">
+            <h2 style="font-family: monospace;" >chicken curry</h2>
+            <p>$-30</p>
+            <button type="submit" class="cartbutton" onclick="order_online_now()">Order Now</button>
+        </div>
+        
+    </div>
+
+
+    <!-- toppings section  -->
+    <div class="toppings">
+        <div class="salads">
+            <img src="images/salad1.jpg" alt="sorry">
+            <h2>veg salad</h2>
+            <p>$-10</p>
+            <div class="divsaladcartbtn"><button type="submit" class="cartbutton" onclick="order_online_now()">Order Now</button></div>
+        </div>
+
+        <div class="salads">
+            <img src="images/salad2.jpg" alt="sorry">
+            <h2>fruit salad</h2>
+            <p>$-10</p>
+            <div class="divsaladcartbtn"><button type="submit" class="cartbutton" onclick="order_online_now()">Order Now</button></div>
+        </div>
+
+        <div class="salads">
+            <img src="images/salad3.jpg" alt="sorry">
+            <h2>grains salad</h2>
+            <p>$-10</p>
+            <div class="divsaladcartbtn"><button type="submit" class="cartbutton" onclick="order_online_now()">Order Now</button></div>
+        </div>
+
+    </div>
+
+    <!-- About section  -->
+    <div class="abtpart" id="about.html">
+
+        <div class="huntquote">
+            <h2>A PLACE TO HUNT YOUR FOOD</h2>
+            <img src="images/gold knot.jpg" alt="sorry" style="text-align: center;">
+            <!-- <hr> -->
+            <h3>Our delicious Story</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit voluptatum dignissimos expedita corrupti? Animi veritatis nostrum excepturi, quidem inventore harum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut architecto autem minus laboriosam maiores esse magnam veritatis reprehenderit, aliquid magni atque sunt, excepturi distinctio suscipit temporibus soluta. Voluptas commodi harum nemo distinctio ex, delectus quaerat? Ipsa inventore numquam facilis fugiat!</p>
+            <a href="booktable.html"><button type="button">Reserve table</button></a>
+        </div>
+
+        <div class="shawarma">
+            <img src="images/mutton nalli.jpg" alt="sorry" style="margin:30px">
+            <img src="images/stick chicken.jpg" alt="sorry">
+        </div>
+
+    </div>
+
+
+    <!-- contact page and about page  -->
+    <div class="contactpart" id="contact.html">
+
+        <div class="contactrightside">
+            <div class="cntform">
+                <h2>Contact Us</h2>
+                <img src="images/gold knot.jpg" alt="">
+                <form action="https://formspree.io/f/xlevovll" method="post">
+                    <input type="text" name="name" placeholder="Name" required><br>
+                    <input type="email" name="email" placeholder="Mail" required><br>
+                    <textarea name="Message" id="" cols="20" rows="3" placeholder="Message" required></textarea><br>
+                    <button type="submit">Send Message</button>
+                </form>
+                <!-- <input type="submit" value="send"> -->
+                <!-- <button type="button">Send Message</button> -->
+            </div>
+
+        </div>
+
+
+
+        <div class="contactleftside">
+            <h2>Let's Eat</h2>
+            <img src="images/gold knot.jpg" alt="sorry">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora repellat velit perspiciatis ipsa nam odio.</p>
+
+            <div class="cntbutton">
+                <a href="#menu.html"><button>Online Order</button></a>
+                <a href="booktable.html"><button>Reserve Table</button></a>
+            </div>
+
+            <p>call us: 123 456 7801</p>
+            <h2>Connect with us on Social Media</h2>
+            <div class="socialicons">
+            <ul>
+                <!-- <li> -->
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+               <!-- </li> -->
+            </ul>
+                
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER PART  -->
+    <div class="footer">
+        <div class="copyrights">
+            <h3>copyrights &copy; hunter team</h3>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
